@@ -1,0 +1,50 @@
+# === ENTORNO VIRTUAL ===
+myvenv/
+venv/
+env/
+.venv/
+
+# === ARCHIVOS DE PYTHON ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+
+# === MIGRACIONES (Se ignoran todas menos el __init__.py) ===
+apps/*/migrations/*.py
+!apps/*/migrations/__init__.py
+
+# === ARCHIVOS DE CONFIGURACIÓN PRIVADA ===
+.env
+*.env
+*.key
+*.secret
+config/settings_local.py
+# Si tienes tus credenciales en settings.py, deberías moverlas a un .env
+
+# === BASE DE DATOS ===
+# NO EXISTE db.sqlite3, así que no lo ponemos.
+# Pero podrías ignorar backups:
+*.sql
+*.dump
+*.backup
+
+# === ARCHIVOS DE MEDIOS Y ESTÁTICOS GENERADOS ===
+media/
+staticfiles/
+static/
+
+# === LOGS ===
+*.log
+
+# === VS CODE ===
+.vscode/
+
+# === WINDOWS SISTEMA ===
+Thumbs.db
+desktop.ini
+
+# === OTROS ===
+*.tmp
+*.bak
